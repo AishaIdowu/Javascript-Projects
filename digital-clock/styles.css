@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body{
+    background: conic-gradient(from 90deg at 25% -10%, black, grey);
+    font-family: 'Montserrat', regular;
+    overflow: hidden;
+    
+}
+.container{
+    margin: auto 0;
+    width: 95%;
+    height: 100vh;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+.digitalClock{
+    width: fit-content;
+    padding: 1em;
+    margin: auto;
+    border-radius: 2px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+
+}
+
+.digitalClock h1{
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+  @media(max-width:768px){
+    #bar1, #bar2{
+      display: none;
+    }
+  
+    .digitalClock{
+      text-align: center;
+      width: 100%;
+    }
+  
+    .digitalClock h1{
+      display: block;
+    }
+  }
+  
+  @media(max-width:480px){
+    .digitalClock h1{
+      font-size: 4rem;
+    }
+  }
+  
