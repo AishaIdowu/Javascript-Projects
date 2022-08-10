@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Global Styles */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: hsl(210, 36%, 96%);;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-family: 'Roboto';
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h2,
+h4 {
+    
+    text-transform: capitalize;
+    line-height: 1.25;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+
+}
+h2 {
+    font-size: 2rem;
+
+}
+h4{
+    font-size: 0.875rem;
+}
+
+/* Media Screen */
+@media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+}
+/* MEDIA SCREEN */
+@media screen and (min-width: 992px) {
+    main{
+        min-height: calc(100vh - 3rem);
+        display: grid;
+        place-items: center;
+    }
+    
+    
+    nav{
+        background: white;
+        height: 3rem;
+        display: grid;
+        align-items: center;
+        box-shadow: rgb(32, 31, 31);
+    }
+    .nav-container {
+        width: 90vw;
+        max-width: var(--fixed-width);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-container h4 {
+        margin-bottom: 0;
+        color: rgb(153, 153, 220);
+    }
+    .nav-links {
+        display: flex;
+    }
+    nav a {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 1rem;
+        color: rgb(39, 39, 74);
+        margin-right: 1rem;
+    }
+    nav a:hover {
+        color: rgb(21, 21, 41);
+    }
+    
+    
+    .container{
+        text-align: center;
+    }
+    .colorName{
+        color: black;
+    }
+    #btn {
+        font-family: 'Robot';
+        text-transform: uppercase;
+        background: transparent;
+        color: rgb(11, 11, 11);
+        display: inline-block;
+        font-weight: 700;
+        border: 2px solid black;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+    #btn:hover {
+        color: white;
+        background: rgb(11, 11, 11);
+    }
+      
+    
+}
+
